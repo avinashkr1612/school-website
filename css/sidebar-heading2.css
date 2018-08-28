@@ -1,0 +1,70 @@
+body{
+background: url("img/bg.jpg") repeat ;
+}
+.sidebar-head,.gallery{
+  width:250px;
+  height: 45px;
+  position: relative;
+  top: 10px;
+  left: -30px;
+  background: rgb(19, 49, 116);
+  border: 1px solid #000;
+  color: #fff;
+}
+.sidebar-head > h3, .content-head > h3, .gallery > h3{
+  transform: skewX(30deg);
+  display: table;
+  margin: 0 auto;
+  line-height: 45px;
+  font-family: 'Roboto slab', sans-serif;
+  font-weight: lighter;
+}
+.sidebar-head-ob,.gallery-ob{
+  width:250px;
+
+}
+.sidebar-body{
+  font-size: 14px;
+  font-family: 'open sans';
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%,0);
+  color: #555;
+  font-weight: 600;
+}
+.skewx30{
+  position: relative;
+  margin-left: 60px;
+  height: 45px;
+  background-color: rgb(255,221,87);
+  transform: skewX(-30deg);
+}
+
+.content-head-ob{
+  width:80%;
+  }
+
+.content-head{
+  width:350px;
+  height: 45px;
+  position: relative;
+  top: 10px;
+  left: -30px;
+  background: rgb(19, 49, 116);
+  border: 1px solid #000;
+  color: #fff;
+}
+.content-body > hero > hero-body {
+  background: url('img/divider.png');
+}
+
+.image.is-200x140 {
+  height: 140px;
+  width: 200px;
+}
+
+.is-centered{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;

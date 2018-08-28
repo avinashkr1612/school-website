@@ -1,0 +1,264 @@
+@media (min-width:951px){
+	#cssmenu,
+	#cssmenu ul,
+	#cssmenu ul li,
+	#cssmenu ul li a,
+	#cssmenu #menu-button{
+    max-width: 1200px;
+		margin:0 auto;
+		padding:0;
+		border:0;
+		list-style:none;
+		line-height:60px;
+    height: 60px;
+		display:block;
+		box-sizing:border-box;
+	}
+
+	#cssmenu:after,
+	#cssmenu>ul:after{
+		content:".";
+		display:block;
+		clear:both;
+		visibility:hidden;
+		line-height:0;
+		height:0;
+	}
+
+	#cssmenu #menu-button{
+		display:none;
+	}
+
+	#cssmenu{
+    position:relative;
+    width: 100%;
+    z-index: 1000;
+    bottom: 0px;
+		background:rgb(0,59,93);
+    border-bottom: 10px solid #6e808b;
+	}
+  #cssmenu > ul {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+
+	#cssmenu > ul >li {
+		float:left;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+	}
+
+	#cssmenu >ul>li>a{
+		padding:0 20px;
+    font-family:'open sans', sans-serif;
+		font-size:12px;
+		text-decoration:none;
+    letter-spacing: 1px;
+		color:#fff;
+    font-weight: 700;
+		text-transform:uppercase;
+		transition:color .25s ease;
+	}
+	#cssmenu>ul>li:hover >a{
+		color:fff;
+	}
+	#cssmenu>ul>li.has-sub>a{
+		padding-right:30px;
+	}
+
+	#cssmenu ul>li.has-sub>a:after{
+		position:absolute;
+		top:22px;
+		right:11px;
+		width:8px;
+		height:2px;
+		display:block;
+		background:#ddd;
+		content:'';
+		transition:background .25s ease;
+	}
+
+	#cssmenu>ul>li.has-sub:hover>a:after,
+	#cssmenu>ul>li.has-sub>a:hover:after{
+		background:#fff;
+	}
+
+	#cssmenu ul>li.has-sub>a:before{
+		position:absolute;
+		top:19px;
+		right:14px;
+		display:block;
+		width:2px;
+		height:9px;
+		background:#ddd;
+		content:'';
+		transition:all .25s ease;
+	}
+
+	#cssmenu ul>li.has-sub:hover>a:before,
+	#cssmenu ul>li.has-sub>a:hover:before{
+		top:23px;
+		height:0;
+	}
+
+	#cssmenu ul ul{
+		position:absolute;
+		left:-9999px;
+	}
+
+	#cssmenu li:hover>ul{
+		left:auto;
+	}
+
+	#cssmenu ul ul ul{
+		margin-left:100%;
+		top:0;
+	}
+
+	#cssmenu ul ul li{
+		height:0;
+		transition:height .25s ease;
+	}
+
+	#cssmenu li:hover>ul>li{
+		height:35px;
+	}
+
+	#cssmenu ul ul li a{
+		width:170px;
+		padding:11px 15px;
+		border-bottom:1px solid rgba(150,150,150,0.15);
+		text-decoration:none;
+		color:#ddd;
+		font-weight:700;
+		background:#333;
+	}
+
+	#cssmenu ul ul li:last-child>a,
+	#cssmenu ul ul li.last-item>a{
+		border-bottom:0;
+	}
+
+	#cssmenu ul ul li:hover>a,
+	#cssmenu ul ul li a:hover{
+		color:#fff;
+	}
+
+	#cssmenu ul ul li.has-sub>a:after{
+		top:16px;
+		right:11px;
+		background:#ddd;
+	}
+
+	#cssmenu ul ul>li.has-sub:hover>a:after,
+	#cssmenu ul ul>li.has-sub>a:hover:after{
+	}
+
+	#cssmenu ul ul li.has-sub>a:before{
+		top:13px;
+		right:14px;
+		background:#ddd;
+	}
+
+	#cssmenu ul ul>li.has-sub:hover>a:before{
+		top:17px;
+		height:0;
+	}
+
+
+	#togglediv{
+		display:none;
+	}
+
+}
+
+
+
+
+
+@media (max-width:950px){
+	.topnav{
+		font-family:calibri;
+		background:rgb(0,59,93);
+		width:260px;
+		height: 100%;
+		position:absolute;
+		z-index: 1000;
+		left:-300px;
+		display:block;
+		padding:10px;
+	  border-right: 5px solid #6e808b;
+		transition:0.5s cubic-bezier(0.33, 0.55, 0.18, 1.43);
+		}
+		li{
+				padding-top:10px;
+				padding-bottom:10px;
+				display:block;
+			}
+			#cssmenu>ul>li{
+				border-bottom:1px solid #aaa;
+			}
+
+			#cssmenu>ul>li>ul>li{
+						margin-left:30px;
+			}
+
+			a{
+					text-decoration:none;
+					letter-spacing:1px;
+			}
+			#cssmenu >ul>li>a{
+				padding:10px;
+				font-size:12px;
+				letter-spacing:1px;
+				text-decoration:none;
+				color:#ddd;
+				font-weight:700;
+				text-transform:uppercase;
+				transition:color .25s ease;
+			}
+			#cssmenu>ul>li:hover >a{
+				color:fff;
+			}
+			#cssmenu ul li a{
+				font-size:12px;
+				color:#ddd;
+				font-weight:700;
+				text-transform:uppercase;
+				transition:color .25s ease;
+			}
+			#cssmenu>ul>li>ul>li{
+				display:none;
+			}
+			#cssmenu>ul>li>ul>li>ul>li{
+				display:none;
+			}
+			#cssmenu ul li:hover >ul>li{
+				display:block;
+			}
+		#togglediv{
+			width: 100%;
+			height: 60px;
+			background:rgb(0,59,93);
+			border-bottom: 10px solid #6e808b;
+		}
+
+	#menuToggle{
+		position:relative;
+		float:right;
+		border:none;
+		cursor:pointer;
+		margin:5px;
+		width:40px;
+		height:40px;
+		font-size:17px;
+		font-weight:700;
+		outline:none;
+		color:#ddd;
+		background:rgb(0,59,93);
+	}
+	.responsive{
+		left: 0px;
+	}
+}
