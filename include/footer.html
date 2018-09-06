@@ -1,0 +1,40 @@
+<div class="footer has-text-light" style="background:#333;">
+  <div class="columns">
+    <div class="column is-5">
+      <div id="map" style="width:100%;height:300px;background-color:grey">
+      </div>
+    </div>
+    <div class="column is-3">
+      <!-- <div id="map"></div> -->
+      <p>
+                  ALOK PUBLIC SCHOOL,<br>CENTRAL COLONY, PHUSRO DIST,<br> BOKARO, JHARKHAND <br>PIN - 829144 <br>085780 46613 <br><br>ESTABLISHED IN 2008 <br><br>Managed By: <br> <a href="#">NAGESHWAR MEMORIAL EDUCATION TRUST </a>
+                </p>
+    </div>
+    <div class="column hero is-6">
+      <p>
+            <strong><u>Quick Links </u></strong><br>
+            <a href="about.html">About us</a> &ensp; | &ensp; <a href="#">Curriculum</a> | &ensp; <a href="#">Results</a> | &ensp; <a href="#">Gallery</a>
+      </p>
+
+    </div>
+  </div>
+      <hr>
+      <div class="is-centered">
+          © 2011 Alok Public School. All rights reserved
+      </div>
+
+</div>
+<script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 23.7835019, lng: 86.0136336};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 15, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRK-qtVCi_u_sIJCXcFG7Cyv9URDas9Ig&callback=initMap">
+</script>
