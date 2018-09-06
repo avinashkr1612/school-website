@@ -9,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <meta http-equiv="refresh" content="3"> -->
   <title></title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
   <div class="wrapper is-centered">
@@ -18,56 +19,9 @@
       </div>
     </div><!-- end of header   -->
 
-    <!-- navbar starts here -->
-    <div id="cssmenu" class="topnav">
+<!-- place for navbar -->
+<div id="nav-placeholder"></div>
 
-      <ul>
-        <li><a href="#">Home </a></li>
-        <li><a href="#">Curriculum</a>
-        </li>
-        <li>
-          <a href="#">Admission</a>
-        </li>
-        <li>
-          <a href="#">Facalities ▾</a>
-          <ul>
-            <li><a href="#">Physics Lab</a></li>
-            <li><a href="#">Chemistry lab</a></li>
-            <li><a href="#">Private</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Examinations ▾</a>
-          <ul>
-            <li><a href="#">Exam Notice </a></li>
-            <li><a href="#">Datesheet</a></li>
-            <li><a href="#">Results</a></li>
-            <li><a href="#">Others</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Gallery</a>
-        </li>
-
-        <li>
-          <a href="#">Achievements</a>
-          <ul>
-            <li><a href="#">12<sup>th</sup> toppers</a></li>
-            <li><a href="#">10<sup>th</sup> toppers</a></li>
-            <li><a href="#">Other Achievement</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">About Us</a>
-        </li>
-      </ul>
-    </div>
-    <div id="togglediv">
-
-      <button id="menuToggle" onclick="slidenav()">☰ </button>
-
-    </div>
-    <!-- navbar ends here -->
     <!-- image slider starts from here -->
     <div class="slideshow-container">
 
@@ -234,6 +188,10 @@
 </div>
 <script type="text/javascript" src="js/navbar.js"></script>
 <script type="text/javascript" src="js/slider.js"></script>
-
+<script>
+$(function(){
+  $("#nav-placeholder").load("include/navbar.html");
+});
+</script>
 
 </body></html>
